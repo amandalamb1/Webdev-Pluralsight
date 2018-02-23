@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <head>
+        <title>Github Hub</title>
+    </head>
 
-</head>
-<body>
-    
-</body>
+    <body>
+        <header>
+            <div><img src="logo.gif" /></div>
+
+            div>This is a site to search Github for interesting projects</div>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                    <li><a href="/about.html">About</a></li>
+                 </ul>
+            </nav>
+        </header>
+
+        <section>
+            <p>In this <em>sample site</em>, we'll show a list of <a href="Github.com">Github</a> projects <span> and the data</span> about <strong>those projects.</strong></p>
+            <form action="http://wilder.azurewebsites.net/echo" method="post">
+                <label for="SearchPhrase">Search Phrase:</label>
+                <input name="SearchPhrase" id="SearchPhrase"/><br/>
+                <input type="Checkbox" name="useStars" id="useStars" checked="true" /> 
+                <label for="useStars">Use Stars? </label><br/>
+                <label for="langChoice">Language:</label>
+                <Select name="langChoice">
+                    <option selected>All</option>
+                    <option>JavaScript</option>
+                    <option>C#</option>
+                    <option>Java</option>
+                    <option>Ruby</option>
+                </Select>
+                <br/>
+                <input type="submit" value="Search"/>
+            </form>
+        </section>
+
+        <footer>
+            &copy; 2014 Amanda Lamb 
+        </footer>
+
+    </body>
 </html>
