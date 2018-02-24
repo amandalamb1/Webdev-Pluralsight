@@ -2,13 +2,17 @@
 <html lang="en">
     <head>
         <title>Github Hub</title>
+        <!-- [if lt IE 9]>
+            <script src="//htmlSshiv.goooglecode.come/svn/trunk/html5.js"><script>
+            <![endif]-->
+        <link rel="stylesheet" href="site.css" />
     </head>
 
     <body>
         <header>
-            <div><img src="logo.gif" /></div>
+            <div><img src="logo.gif" class="bordered-image" /></div>
 
-            div>This is a site to search Github for interesting projects</div>
+            <div>This is a site to search Github for interesting projects</div>
             <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
@@ -18,12 +22,12 @@
             </nav>
         </header>
 
-        <section>
+        <section id="main">
             <p>In this <em>sample site</em>, we'll show a list of <a href="Github.com">Github</a> projects <span> and the data</span> about <strong>those projects.</strong></p>
-            <form action="http://wilder.azurewebsites.net/echo" method="post">
+            <form action="http://wilder.azurewebsites.net/echo" method="post" class="bordered-image simple-form">
                 <label for="SearchPhrase">Search Phrase:</label>
-                <input name="SearchPhrase" id="SearchPhrase"/><br/>
-                <input type="Checkbox" name="useStars" id="useStars" checked="true" /> 
+                <input type="text" name="SearchPhrase" id="SearchPhrase"/><br/>
+                <input type="Checkbox" name="useStars" id="useStars" checked="true"/> 
                 <label for="useStars">Use Stars? </label><br/>
                 <label for="langChoice">Language:</label>
                 <Select name="langChoice">
